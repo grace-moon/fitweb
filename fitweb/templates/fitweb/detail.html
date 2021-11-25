@@ -33,7 +33,11 @@
             content: "";
             border :0;
         }
-
+        @media (min-width: 576px) {
+            .container {
+                max-width: 100%;
+            }
+        }
 
     </style>
 <body>
@@ -57,7 +61,7 @@
                     <p>{{ post.text }}</p>
                     <div>
                         {% video post.video '700x500' %}
-                            <iframe style="margin-left: auto; margin-right: auto;" class="embed-responsive-item" src="{{ youtube.url }}" frameborder="0"></iframe>
+                        <h1><iframe style="margin-left: auto; margin-right: auto;" class="embed-responsive-item" src="{{ youtube.url }}" frameborder="0"></iframe></h1>
                     </div>
         </header>
     </div>
