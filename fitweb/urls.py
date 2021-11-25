@@ -9,6 +9,9 @@ urlpatterns = [
     path('email', views.email, name='email'),
     path('list', views.list, name='list'),
     path('post/<int:pk>/', views.detail, name='detail'),
-    path('stretching_home',views.stretching_home, name='stretching_home'),
-    path('stretching_secondhome', views.stretching_secondhome, name='stretching_secondhome'),
+
+    path('stretching_pain_category', views.stretching_pain_category, name='stretching_pain_category'),
+    path('stretching_pain_list', views.stretching_pain_list, name='stretching_pain_list'),
+    path('stretching_pain', views.stretching_pain, name='stretching_pain'),
+
 ]

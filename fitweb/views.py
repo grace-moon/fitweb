@@ -27,10 +27,21 @@ def list(request):
     posts = Post.objects.all()
     return render(request, 'fitweb/list.html', {'posts': posts})
 
-def stretching_home(request):
-    posts = Post.objects.filter(Header_first__contains='스트레칭')
-    return render(request, 'fitweb/stretching_home.html', {'posts': posts})
 
-def stretching_secondhome(request):
-    posts =Post.objects.filter(Header_second__contains='통증')
-    return render(request, 'fitweb/stretching_secondhome.html', {'posts': posts})
+
+def stretching_pain_category(request):
+    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증')
+    return render(request, 'fitweb/stretching_pain_category.html', {'posts': posts})
+
+
+def stretching_pain_list(request):
+    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증')
+    return render(request, 'fitweb/stretching_pain_list.html', {'posts': posts})
+
+
+def stretching_pain(request):
+    posts = Post.objects.filter(Header_third__contains='전신')
+    return render(request, 'fitweb/stretching_pain.html', {'posts': posts})
+
+
+
