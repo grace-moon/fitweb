@@ -105,4 +105,119 @@ def stretching_list_after_wake_up_long(request):
 
 
 
+def stretching_list_before_bed_short(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='before bed', Header_third__contains='short')
+    return render(request, 'fitweb/stretching_list_before_bed_short.html', {'posts': posts})
+
+def stretching_list_before_bed_medium(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='before bed', Header_third__contains='medium')
+    return render(request, 'fitweb/stretching_list_before_bed_medium.html', {'posts': posts})
+
+def stretching_list_before_bed_long(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='before bed', Header_third__contains='long')
+    return render(request, 'fitweb/stretching_list_before_bed_long.html', {'posts': posts})
+
+
+
+def stretching_list_before_exercise_short(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='before exercise', Header_third__contains='short')
+    return render(request, 'fitweb/stretching_list_before_exercise_short.html', {'posts': posts})
+
+def stretching_list_before_exercise_medium(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='before exercise', Header_third__contains='medium')
+    return render(request, 'fitweb/stretching_list_before_exercise_medium.html', {'posts': posts})
+
+def stretching_list_before_exercise_long(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='before exercise', Header_third__contains='long')
+    return render(request, 'fitweb/stretching_list_before_exercise_long.html', {'posts': posts})
+
+
+
+
+def stretching_list_after_exercise_short(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='after exercise', Header_third__contains='short')
+    return render(request, 'fitweb/stretching_list_after_exercise_short.html', {'posts': posts})
+
+def stretching_list_after_exercise_medium(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='after exercise', Header_third__contains='medium')
+    return render(request, 'fitweb/stretching_list_after_exercise_medium.html', {'posts': posts})
+
+def stretching_list_after_exercise_long(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='after exercise', Header_third__contains='long')
+    return render(request, 'fitweb/stretching_list_after_exercise_long.html', {'posts': posts})
+
+
+
+
+
+
+
+def weight_training_list_low_level_2parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='low', Header_third__contains='2parts')
+    return render(request, 'fitweb/weight_training_list_low_level_2parts.html', {'posts': posts})
+
+def weight_training_list_low_level_3parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='low', Header_third__contains='3parts')
+    return render(request, 'fitweb/weight_training_list_low_level_3parts.html', {'posts': posts})
+
+def weight_training_list_low_level_4parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='low', Header_third__contains='4parts')
+    return render(request, 'fitweb/weight_training_list_low_level_4parts.html', {'posts': posts})
+
+def weight_training_list_low_level_5parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='low', Header_third__contains='5parts')
+    return render(request, 'fitweb/weight_training_list_low_level_5parts.html', {'posts': posts})
+
+
+
+
+def weight_training_list_middle_level_2parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='middle', Header_third__contains='2parts')
+    return render(request, 'fitweb/weight_training_list_middle_level_2parts.html', {'posts': posts})
+
+def weight_training_list_middle_level_3parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='middle', Header_third__contains='3parts')
+    return render(request, 'fitweb/weight_training_list_middle_level_3parts.html', {'posts': posts})
+
+def weight_training_list_middle_level_4parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='middle', Header_third__contains='4parts')
+    return render(request, 'fitweb/weight_training_list_middle_level_4parts.html', {'posts': posts})
+
+def weight_training_list_middle_level_5parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='middle', Header_third__contains='5parts')
+    return render(request, 'fitweb/weight_training_list_middle_level_5parts.html', {'posts': posts})
+
+
+
+
+def weight_training_list_high_level_2parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='high', Header_third__contains='2parts')
+    return render(request, 'fitweb/weight_training_list_high_level_2parts.html', {'posts': posts})
+
+def weight_training_list_high_level_3parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='high', Header_third__contains='3parts')
+    return render(request, 'fitweb/weight_training_list_high_level_3parts.html', {'posts': posts})
+
+def weight_training_list_high_level_4parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='high', Header_third__contains='4parts')
+    return render(request, 'fitweb/weight_training_list_high_level_4parts.html', {'posts': posts})
+
+def weight_training_list_high_level_5parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='high', Header_third__contains='5parts')
+    return render(request, 'fitweb/weight_training_list_high_level_5parts.html', {'posts': posts})
+
+
+
+
+def full_body_exercise_list(request):
+    posts = Post.objects.filter(Header_first__contains='full body exercise')
+    return render(request, 'fitweb/full_body_exercise_list.html', {'posts': posts})
+
+def full_body_exercise_list_low_level(request):
+    posts = Post.objects.filter(Header_first__contains='full body exercise', Header_second__contains='low')
+    return render(request, 'fitweb/full_body_exercise_list_low_level.html', {'posts': posts})
+
+def full_body_exercise_list_high_level(request):
+    posts = Post.objects.filter(Header_first__contains='full body exercise', Header_second__contains='high')
+    return render(request, 'fitweb/full_body_exercise_list_high_level.html', {'posts': posts})
 

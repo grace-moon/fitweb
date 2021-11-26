@@ -32,9 +32,53 @@ urlpatterns = [
     path('stretching_list_after_wake_up_medium', views.stretching_list_after_wake_up_medium, name='stretching_list_after_wake_up_medium'),
     path('stretching_list_after_wake_up_long', views.stretching_list_after_wake_up_long, name='stretching_list_after_wake_up_long'),
 
+    path('stretching_list_before_bed_short', views.stretching_list_before_bed_short, name='stretching_list_before_bed_short'),
+    path('stretching_list_before_bed_medium', views.stretching_list_before_bed_medium, name='stretching_list_before_bed_medium'),
+    path('stretching_list_before_bed_long', views.stretching_list_before_bed_long, name='stretching_list_before_bed_long'),
 
+    path('stretching_list_before_exercise_short', views.stretching_list_before_exercise_short, name='stretching_list_before_exercise_short'),
+    path('stretching_list_before_exercise_medium', views.stretching_list_before_exercise_medium, name='stretching_list_before_exercise_medium'),
+    path('stretching_list_before_exercise_long', views.stretching_list_before_exercise_long, name='stretching_list_before_exercise_long'),
 
+    path('stretching_list_after_exercise_short', views.stretching_list_after_exercise_short,
+         name='stretching_list_after_exercise_short'),
+    path('stretching_list_after_exercise_medium', views.stretching_list_after_exercise_medium,
+         name='stretching_list_after_exercise_medium'),
+    path('stretching_list_after_exercise_long', views.stretching_list_after_exercise_long,
+         name='stretching_list_after_exercise_long'),
 
+    path('weight_training_list_low_level_2parts', views.weight_training_list_low_level_2parts,
+         name='weight_training_list_low_level_2parts'),
+    path('weight_training_list_low_level_3parts', views.weight_training_list_low_level_3parts,
+         name='weight_training_list_low_level_3parts'),
+    path('weight_training_list_low_level_4parts', views.weight_training_list_low_level_4parts,
+         name='weight_training_list_low_level_4parts'),
+    path('weight_training_list_low_level_5parts', views.weight_training_list_low_level_5parts,
+         name='weight_training_list_low_level_5parts'),
 
+    path('weight_training_list_middle_level_2parts', views.weight_training_list_middle_level_2parts,
+         name='weight_training_list_middle_level_2parts'),
+    path('weight_training_list_middle_level_3parts', views.weight_training_list_middle_level_3parts,
+         name='weight_training_list_middle_level_3parts'),
+    path('weight_training_list_middle_level_4parts', views.weight_training_list_middle_level_4parts,
+         name='weight_training_list_middle_level_4parts'),
+    path('weight_training_list_middle_level_5parts', views.weight_training_list_middle_level_5parts,
+         name='weight_training_list_middle_level_5parts'),
+
+    path('weight_training_list_high_level_2parts', views.weight_training_list_high_level_2parts,
+         name='weight_training_list_high_level_2parts'),
+    path('weight_training_list_high_level_3parts', views.weight_training_list_high_level_3parts,
+         name='weight_training_list_high_level_3parts'),
+    path('weight_training_list_high_level_4parts', views.weight_training_list_high_level_4parts,
+         name='weight_training_list_high_level_4parts'),
+    path('weight_training_list_high_level_5parts', views.weight_training_list_high_level_5parts,
+         name='weight_training_list_high_level_5parts'),
+
+    path('full_body_exercise_list', views.full_body_exercise_list,
+         name='full_body_exercise_list'),
+    path('full_body_exercise_list_low_level', views.full_body_exercise_list_low_level,
+         name='full_body_exercise_list_low_level'),
+    path('full_body_exercise_list_high_level', views.full_body_exercise_list_high_level,
+         name='full_body_exercise_list_high_level'),
 
 ]
