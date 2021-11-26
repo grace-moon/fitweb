@@ -11,6 +11,7 @@ urlpatterns = [
     path('post/<int:pk>/', views.detail, name='detail'),
 
     path('stretching_list', views.stretching_list, name='stretching_list'),
+    path('weight_training_list', views.weight_training_list, name='weight_training_list'),
 
     path('stretching_list_pain_fullbody', views.stretching_list_pain_fullbody, name='stretching_list_pain_fullbody'),
     path('stretching_list_pain_neck', views.stretching_list_pain_neck, name='stretching_list_pain_neck'),
@@ -23,8 +24,17 @@ urlpatterns = [
 
 
 
-    path('stretching_spare_fullbody', views.stretching_spare_fullbody, name='stretching_spare_fullbody'),
-    path('stretching_spare_top', views.stretching_spare_top, name='stretching_spare_top'),
-    path('stretching_spare_bottom', views.stretching_spare_bottom, name='stretching_spare_bottom'),
+    path('stretching_list_spare_time_fullbody', views.stretching_list_spare_time_fullbody, name='stretching_list_spare_time_fullbody'),
+    path('stretching_list_spare_time_top', views.stretching_list_spare_time_top, name='stretching_list_spare_time_top'),
+    path('stretching_list_spare_time_bottom', views.stretching_list_spare_time_bottom, name='stretching_list_spare_time_bottom'),
+
+    path('stretching_list_after_wake_up_short', views.stretching_list_after_wake_up_short, name='stretching_list_after_wake_up_short'),
+    path('stretching_list_after_wake_up_medium', views.stretching_list_after_wake_up_medium, name='stretching_list_after_wake_up_medium'),
+    path('stretching_list_after_wake_up_long', views.stretching_list_after_wake_up_long, name='stretching_list_after_wake_up_long'),
+
+
+
+
+
 
 ]

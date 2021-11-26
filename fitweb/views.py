@@ -31,9 +31,12 @@ def list(request):
 
 
 def stretching_list(request):
-    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='pain relief')
+    posts = Post.objects.filter(Header_first__contains='stretching')
     return render(request, 'fitweb/stretching_list.html', {'posts': posts})
 
+def weight_training_list(request):
+    posts = Post.objects.filter(Header_first__contains='weight training')
+    return render(request, 'fitweb/weight_training_list.html', {'posts': posts})
 
 def stretching_list_pain_fullbody(request):
     posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='pain relief', Header_third__contains='full body')
@@ -74,15 +77,32 @@ def stretching_list_pain_ankle(request):
 
 
 
-def stretching_spare_fullbody(request):
-    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='spare', Header_third__contains='full body')
-    return render(request, 'fitweb/stretching_spare_fullbody.html', {'posts': posts})
+def stretching_list_spare_time_fullbody(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='spare time', Header_third__contains='full body')
+    return render(request, 'fitweb/stretching_list_spare_time_fullbody.html', {'posts': posts})
 
-def stretching_spare_top(request):
-    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='spare', Header_third__contains='top')
-    return render(request, 'fitweb/stretching_spare_top.html', {'posts': posts})
+def stretching_list_spare_time_top(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='spare time', Header_third__contains='top')
+    return render(request, 'fitweb/stretching_list_spare_time_top.html', {'posts': posts})
 
-def stretching_spare_bottom(request):
-    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='spare', Header_third__contains='bottom')
-    return render(request, 'fitweb/stretching_spare_bottom.html', {'posts': posts})
+def stretching_list_spare_time_bottom(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='spare time', Header_third__contains='bottom')
+    return render(request, 'fitweb/stretching_list_spare_time_bottom.html', {'posts': posts})
+
+
+
+def stretching_list_after_wake_up_short(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='after wake up', Header_third__contains='short')
+    return render(request, 'fitweb/stretching_list_after_wake_up_short.html', {'posts': posts})
+
+def stretching_list_after_wake_up_medium(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='after waKe up', Header_third__contains='medium')
+    return render(request, 'fitweb/stretching_list_after_wake_up_medium.html', {'posts': posts})
+
+def stretching_list_after_wake_up_long(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='after waKe up', Header_third__contains='long')
+    return render(request, 'fitweb/stretching_list_after_wake_up_long.html', {'posts': posts})
+
+
+
 
