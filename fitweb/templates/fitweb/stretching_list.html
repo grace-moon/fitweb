@@ -46,7 +46,7 @@
             <li class="list-group-item">
                 <div class="dropdown dropend">
                   <button  class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <a style="font-size: 20px;" href={% url 'home' %}>Pain Relief</></a>
+                      <a style="font-size: 20px;" href={% url 'home' %}>Pain Relief</a>
                   </button >
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white">
                         <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_list_pain_fullbody' %}">Full Body</a></li>
@@ -64,7 +64,7 @@
             <li class="list-group-item">
                 <div class="dropdown dropend">
                   <button  class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <a style="font-size: 20px;" href={% url 'home' %}>Spare Time</></a>
+                      <a style="font-size: 20px;" href={% url 'home' %}>Spare Time</a>
                   </button >
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white">
                         <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_spare_fullbody' %}">Full Body</a></li>
@@ -76,69 +76,54 @@
             <li class="list-group-item">
                 <div class="dropdown dropend">
                   <button  class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <a style="font-size: 20px;" href={% url 'home' %}>Shoulder</></a>
+                      <a style="font-size: 20px;" href={% url 'home' %}>After Wake UP</a>
                   </button >
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white">
-                        <li class="dropdown-item" ><a style="color: black" href="post/6">8min</a></li>
-                        <li class="dropdown-item" ><a style="color: black" href="post/7">20min</a></li>
-                        <li class="dropdown-item" ><a style="color: black" href="post/10">25min</a></li>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white">
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_spare_fullbody' %}">Full Body</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_spare_top' %}">Top</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_spare_bottom' %}">Bottom</a></li>
+                      </ul>
+                </div>
+            </li>
 
-                    </ul>
-                </div>
-            </li>
             <li class="list-group-item">
                 <div class="dropdown dropend">
                   <button  class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <a style="font-size: 20px;" href={% url 'home' %}>Waist</></a>
+                      <a style="font-size: 20px;" href={% url 'home' %}>Before Bed</a>
                   </button >
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white">
-                        <li class="dropdown-item" ><a style="color: black" href="post/8">10min</a></li>
-                        <li class="dropdown-item" ><a style="color: black" href="post/9">18min</a></li>
-                    </ul>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white">
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_spare_fullbody' %}">Full Body</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_spare_top' %}">Top</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_spare_bottom' %}">Bottom</a></li>
+                      </ul>
                 </div>
             </li>
+
             <li class="list-group-item">
                 <div class="dropdown dropend">
                   <button  class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <a style="font-size: 20px;" href={% url 'home' %}>Pelvis</></a>
+                      <a style="font-size: 20px;" href={% url 'home' %}>Before Exercise</a>
                   </button >
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white">
-                        <li class="dropdown-item" ><a style="color: black" href="post/11">10min</a></li>
-                    </ul>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white">
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_spare_fullbody' %}">Full Body</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_spare_top' %}">Top</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_spare_bottom' %}">Bottom</a></li>
+                      </ul>
                 </div>
             </li>
+
             <li class="list-group-item">
                 <div class="dropdown dropend">
                   <button  class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <a style="font-size: 20px;" href={% url 'home' %}>Knee</></a>
+                      <a style="font-size: 20px;" href={% url 'home' %}>After Exercise</a>
                   </button >
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white">
-                        <li class="dropdown-item" ><a style="color: black" href="post/12">10min</a></li>
-                    </ul>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white">
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_spare_fullbody' %}">Full Body</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_spare_top' %}">Top</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_spare_bottom' %}">Bottom</a></li>
+                      </ul>
                 </div>
             </li>
-            <li class="list-group-item">
-                <div class="dropdown dropend">
-                  <button  class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <a style="font-size: 20px;" href={% url 'home' %}>Wrist</></a>
-                  </button >
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white">
-                        <li class="dropdown-item" ><a style="color: black" href="post/13">10min</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <div class="dropdown dropend">
-                  <button  class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <a style="font-size: 20px;" href={% url 'home' %}>Ankle</></a>
-                  </button >
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white">
-                        <li class="dropdown-item" ><a style="color: black" href="post/14">10min</a></li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </h2>
 
 
 </div>

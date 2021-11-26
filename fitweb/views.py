@@ -29,57 +29,53 @@ def list(request):
 
 
 
-def stretching_category(request):
-    posts = Post.objects.filter(Header_first__contains='스트레칭')
-    return render(request, 'fitweb/stretching_category.html', {'posts': posts})
-
 
 def stretching_list(request):
-    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증')
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='pain relief')
     return render(request, 'fitweb/stretching_list.html', {'posts': posts})
 
 
 def stretching_list_pain_fullbody(request):
-    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='전신')
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='pain relief', Header_third__contains='full body')
     return render(request, 'fitweb/stretching_list_pain_fullbody.html', {'posts': posts})
 
 def stretching_list_pain_neck(request):
-    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='목,')
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='pain relief', Header_third__contains='neck')
     return render(request, 'fitweb/stretching_list_pain_neck.html', {'posts': posts})
 
 def stretching_list_pain_shoulder(request):
-    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='어깨')
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='pain relief', Header_third__contains='shoulder')
     return render(request, 'fitweb/stretching_list_pain_shoulder.html', {'posts': posts})
 
 
 def stretching_list_pain_waist(request):
-    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='허리')
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='pain relief', Header_third__contains='waist')
     return render(request, 'fitweb/stretching_list_pain_waist.html', {'posts': posts})
 
 
 def stretching_list_pain_pelvis(request):
-    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='골반')
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='pain relief', Header_third__contains='pelvis')
     return render(request, 'fitweb/stretching_list_pain_pelvis.html', {'posts': posts})
 
 
 def stretching_list_pain_knee(request):
-    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='무릎')
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='pain relief', Header_third__contains='knee')
     return render(request, 'fitweb/stretching_list_pain_knee.html', {'posts': posts})
 
 
 def stretching_list_pain_wrist(request):
-    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='손목')
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='pain relief', Header_third__contains='wrist')
     return render(request, 'fitweb/stretching_list_pain_wrist.html', {'posts': posts})
 
 
 def stretching_list_pain_ankle(request):
-    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='발목')
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='pain relief', Header_third__contains='ankle')
     return render(request, 'fitweb/stretching_list_pain_ankle.html', {'posts': posts})
 
 
 
 def stretching_spare_fullbody(request):
-    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='spare', Header_third__contains='full')
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='spare', Header_third__contains='full body')
     return render(request, 'fitweb/stretching_spare_fullbody.html', {'posts': posts})
 
 def stretching_spare_top(request):

@@ -10,7 +10,6 @@ urlpatterns = [
     path('list', views.list, name='list'),
     path('post/<int:pk>/', views.detail, name='detail'),
 
-    path('stretching_category', views.stretching_category, name='stretching_category'),
     path('stretching_list', views.stretching_list, name='stretching_list'),
 
     path('stretching_list_pain_fullbody', views.stretching_list_pain_fullbody, name='stretching_list_pain_fullbody'),
