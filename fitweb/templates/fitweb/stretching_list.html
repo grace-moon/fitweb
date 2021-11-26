@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="{% static "css/main.css" %}">
 
     </head>
+
+
     <style>
         body{background-color: black}
         .list-group-item {
@@ -36,8 +38,7 @@
 
 <div class="content container">
     <header class="page-header" style="overflow: auto;">
-        <h1 style=" text-align: center; margin-bottom: 3%"><a style="color: white" href={% url 'stretching_list' %}  style="color: #58595B;">STRETCHING</a></h1>
-        <h3 style="color:white; text-align: center; margin-bottom: 3%"><a style="color: white" href={% url 'stretching_pain_category' %}  style="color: #58595B;">Pain Relief</a></h3>
+        <h1 style="text-align: center; margin-bottom: 3%"><a href={% url 'stretching_list' %}  style="color:white;">STRETCHING</a></h1>
     </header>
 
     <h2 id="barofont" class="listdown" >
@@ -45,19 +46,25 @@
             <li class="list-group-item">
                 <div class="dropdown dropend">
                   <button  class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <a style="font-size: 20px;" href={% url 'home' %}>Full Body</></a>
+                      <a style="font-size: 20px;" href={% url 'home' %}>Pain Relief</></a>
                   </button >
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white">
-                        <li class="dropdown-item" ><a style="color: black" href="post/1">10min</a></li>
-                        <li class="dropdown-item" ><a style="color: black" href="post/2">20min</a></li>
-                        <li class="dropdown-item" ><a style="color: black" href="post/3">30min</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_list_pain_fullbody' %}">Full Body</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_list_pain_neck' %}">Neck</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_list_pain_shoulder' %}">Shoulder</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_list_pain_waist' %}">Waist</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_list_pain_pelvis' %}">Pelvis</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_list_pain_knee' %}">Knee</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_list_pain_wrist' %}">Wrist</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_list_pain_ankle' %}">Ankel</a></li>
+
                       </ul>
                 </div>
             </li>
             <li class="list-group-item">
                 <div class="dropdown dropend">
                   <button  class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <a style="font-size: 20px;" href={% url 'home' %}>Neck</></a>
+                      <a style="font-size: 20px;" href={% url 'home' %}>Spare Time</></a>
                   </button >
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white">
                         <li class="dropdown-item" ><a style="color: black" href="post/4">5min</a></li>
@@ -131,6 +138,7 @@
             </li>
         </ul>
     </h2>
+
 
 </div>
 

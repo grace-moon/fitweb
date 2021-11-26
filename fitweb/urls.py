@@ -11,7 +11,15 @@ urlpatterns = [
     path('post/<int:pk>/', views.detail, name='detail'),
 
     path('stretching_pain_category', views.stretching_pain_category, name='stretching_pain_category'),
-    path('stretching_pain_list', views.stretching_pain_list, name='stretching_pain_list'),
-    path('stretching_pain', views.stretching_pain, name='stretching_pain'),
+    path('stretching_list', views.stretching_list, name='stretching_list'),
+
+    path('stretching_list_pain_fullbody', views.stretching_list_pain_fullbody, name='stretching_list_pain_fullbody'),
+    path('stretching_list_pain_neck', views.stretching_list_pain_neck, name='stretching_list_pain_neck'),
+    path('stretching_list_pain_shoulder', views.stretching_list_pain_shoulder, name='stretching_list_pain_shoulder'),
+    path('stretching_list_pain_waist', views.stretching_list_pain_waist, name='stretching_list_pain_waist'),
+    path('stretching_list_pain_pelvis', views.stretching_list_pain_pelvis, name='stretching_list_pain_pelvis'),
+    path('stretching_list_pain_knee', views.stretching_list_pain_knee, name='stretching_list_pain_knee'),
+    path('stretching_list_pain_wrist', views.stretching_list_pain_wrist, name='stretching_list_pain_wrist'),
+    path('stretching_list_pain_ankle', views.stretching_list_pain_ankle, name='stretching_list_pain_ankle'),
 
 ]

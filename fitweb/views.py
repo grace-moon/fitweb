@@ -34,14 +34,44 @@ def stretching_pain_category(request):
     return render(request, 'fitweb/stretching_pain_category.html', {'posts': posts})
 
 
-def stretching_pain_list(request):
+def stretching_list(request):
     posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증')
-    return render(request, 'fitweb/stretching_pain_list.html', {'posts': posts})
+    return render(request, 'fitweb/stretching_list.html', {'posts': posts})
 
 
-def stretching_pain(request):
-    posts = Post.objects.filter(Header_third__contains='전신')
-    return render(request, 'fitweb/stretching_pain.html', {'posts': posts})
+def stretching_list_pain_fullbody(request):
+    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='전신')
+    return render(request, 'fitweb/stretching_list_pain_fullbody.html', {'posts': posts})
+
+def stretching_list_pain_neck(request):
+    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='목,')
+    return render(request, 'fitweb/stretching_list_pain_neck.html', {'posts': posts})
+
+def stretching_list_pain_shoulder(request):
+    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='어깨')
+    return render(request, 'fitweb/stretching_list_pain_shoulder.html', {'posts': posts})
 
 
+def stretching_list_pain_waist(request):
+    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='허리')
+    return render(request, 'fitweb/stretching_list_pain_waist.html', {'posts': posts})
 
+
+def stretching_list_pain_pelvis(request):
+    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='골반')
+    return render(request, 'fitweb/stretching_list_pain_pelvis.html', {'posts': posts})
+
+
+def stretching_list_pain_knee(request):
+    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='무릎')
+    return render(request, 'fitweb/stretching_list_pain_knee.html', {'posts': posts})
+
+
+def stretching_list_pain_wrist(request):
+    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='손목')
+    return render(request, 'fitweb/stretching_list_pain_wrist.html', {'posts': posts})
+
+
+def stretching_list_pain_ankle(request):
+    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='발목')
+    return render(request, 'fitweb/stretching_list_pain_ankle.html', {'posts': posts})
