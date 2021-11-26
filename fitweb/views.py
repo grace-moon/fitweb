@@ -29,9 +29,9 @@ def list(request):
 
 
 
-def stretching_pain_category(request):
-    posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증')
-    return render(request, 'fitweb/stretching_pain_category.html', {'posts': posts})
+def stretching_category(request):
+    posts = Post.objects.filter(Header_first__contains='스트레칭')
+    return render(request, 'fitweb/stretching_category.html', {'posts': posts})
 
 
 def stretching_list(request):
@@ -75,3 +75,18 @@ def stretching_list_pain_wrist(request):
 def stretching_list_pain_ankle(request):
     posts = Post.objects.filter(Header_first__contains='스트레칭', Header_second__contains='통증', Header_third__contains='발목')
     return render(request, 'fitweb/stretching_list_pain_ankle.html', {'posts': posts})
+
+
+
+def stretching_spare_fullbody(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='spare', Header_third__contains='full')
+    return render(request, 'fitweb/stretching_spare_fullbody.html', {'posts': posts})
+
+def stretching_spare_top(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='spare', Header_third__contains='top')
+    return render(request, 'fitweb/stretching_spare_top.html', {'posts': posts})
+
+def stretching_spare_bottom(request):
+    posts = Post.objects.filter(Header_first__contains='stretching', Header_second__contains='spare', Header_third__contains='bottom')
+    return render(request, 'fitweb/stretching_spare_bottom.html', {'posts': posts})
+

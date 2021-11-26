@@ -67,8 +67,9 @@
                       <a style="font-size: 20px;" href={% url 'home' %}>Spare Time</></a>
                   </button >
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: white">
-                        <li class="dropdown-item" ><a style="color: black" href="post/4">5min</a></li>
-                        <li class="dropdown-item" ><a style="color: black" href="post/5">10min</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_spare_fullbody' %}">Full Body</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_spare_top' %}">Top</a></li>
+                        <li class="dropdown-item" ><a style="color: black" href="{% url 'stretching_spare_bottom' %}">Bottom</a></li>
                       </ul>
                 </div>
             </li>
