@@ -7,11 +7,11 @@ urlpatterns = [
     path('about_us', views.about_us, name='about_us'),
     path('how_to_use', views.how_to_use, name='how_to_use'),
     path('email', views.email, name='email'),
-    path('list', views.list, name='list'),
     path('post/<int:pk>/', views.detail, name='detail'),
 
     path('stretching_list', views.stretching_list, name='stretching_list'),
     path('weight_training_list', views.weight_training_list, name='weight_training_list'),
+
 
     path('stretching_list_pain_fullbody', views.stretching_list_pain_fullbody, name='stretching_list_pain_fullbody'),
     path('stretching_list_pain_neck', views.stretching_list_pain_neck, name='stretching_list_pain_neck'),
@@ -74,11 +74,8 @@ urlpatterns = [
     path('weight_training_list_high_level_5parts', views.weight_training_list_high_level_5parts,
          name='weight_training_list_high_level_5parts'),
 
-    path('full_body_exercise_list', views.full_body_exercise_list,
-         name='full_body_exercise_list'),
-    path('full_body_exercise_list_low_level', views.full_body_exercise_list_low_level,
-         name='full_body_exercise_list_low_level'),
-    path('full_body_exercise_list_high_level', views.full_body_exercise_list_high_level,
-         name='full_body_exercise_list_high_level'),
+    path('hiit_list', views.hiit_list, name='hiit_list'),
+    path('hiit_list_low_level', views.hiit_list_low_level, name='hiit_list_low_level'),
+    path('hiit_list_high_level', views.hiit_list_high_level, name='hiit_list_high_level'),
 
 ]

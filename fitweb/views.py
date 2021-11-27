@@ -23,12 +23,6 @@ def detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'fitweb/detail.html', {'post': post})
 
-def list(request):
-    posts = Post.objects.all()
-    return render(request, 'fitweb/list.html', {'posts': posts})
-
-
-
 
 def stretching_list(request):
     posts = Post.objects.filter(Header_first__contains='stretching')
@@ -209,15 +203,15 @@ def weight_training_list_high_level_5parts(request):
 
 
 
-def full_body_exercise_list(request):
-    posts = Post.objects.filter(Header_first__contains='full body exercise')
-    return render(request, 'fitweb/full_body_exercise_list.html', {'posts': posts})
+def hiit_list(request):
+    posts = Post.objects.filter(Header_first__contains='hiit')
+    return render(request, 'fitweb/hiit_list.html', {'posts': posts})
 
-def full_body_exercise_list_low_level(request):
-    posts = Post.objects.filter(Header_first__contains='full body exercise', Header_second__contains='low')
-    return render(request, 'fitweb/full_body_exercise_list_low_level.html', {'posts': posts})
+def hiit_list_low_level(request):
+    posts = Post.objects.filter(Header_first__contains='hiit', Header_second__contains='low')
+    return render(request, 'fitweb/hiit_list_low_level.html', {'posts': posts})
 
-def full_body_exercise_list_high_level(request):
-    posts = Post.objects.filter(Header_first__contains='full body exercise', Header_second__contains='high')
-    return render(request, 'fitweb/full_body_exercise_list_high_level.html', {'posts': posts})
+def hiit_list_high_level(request):
+    posts = Post.objects.filter(Header_first__contains='hiit', Header_second__contains='high')
+    return render(request, 'fitweb/hiit_list_high_level.html', {'posts': posts})
 

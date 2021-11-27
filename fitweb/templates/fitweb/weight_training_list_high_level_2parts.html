@@ -41,7 +41,6 @@
     </style>
 <body>
 
-
 <h1 class="logo" style="margin-top: 50px"><a id="logo" href="{% url 'home' %}"><img src="../../static/images/logo.png"></a></h1>
 
 <nav class="navbar navbar-light bg-light">
@@ -91,6 +90,8 @@
     {% for post in posts %}
         <div class="post">
             <h1><a href="{% url 'detail' pk=post.pk %}">{{ post.title }}</a></h1>
+            <p>{{ post.Header_four|linebreaksbr }}</p>
+
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}

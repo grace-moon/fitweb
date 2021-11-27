@@ -9,6 +9,8 @@ class Post(models.Model):
     Header_first = models.CharField(max_length=200, default='')
     Header_second = models.CharField(max_length=200, default='')
     Header_third = models.CharField(max_length=200, default='', blank=True)
+    Header_four = models.CharField(max_length=200, default='', blank=True)
+
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200, default='')
     video = EmbedVideoField(blank=True)
@@ -24,5 +26,6 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
 
 
