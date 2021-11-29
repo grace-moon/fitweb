@@ -205,13 +205,16 @@ def weight_training_list_high_level_5parts(request):
 
 def hiit_list(request):
     posts = Post.objects.filter(Header_first__contains='hiit')
+    posts = posts.order_by("title")
     return render(request, 'fitweb/hiit_list.html', {'posts': posts})
 
 def hiit_list_low_level(request):
     posts = Post.objects.filter(Header_first__contains='hiit', Header_second__contains='low')
+    posts = posts.order_by("title")
     return render(request, 'fitweb/hiit_list_low_level.html', {'posts': posts})
 
 def hiit_list_high_level(request):
     posts = Post.objects.filter(Header_first__contains='hiit', Header_second__contains='high')
+    posts = posts.order_by("title")
     return render(request, 'fitweb/hiit_list_high_level.html', {'posts': posts})
 
