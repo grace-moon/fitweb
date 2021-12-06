@@ -171,83 +171,68 @@ def stretching_list_after_exercise_long(request):
 
 
 
-def weight_training_list_low_level_2parts(request):
-    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='low', Header_third__contains='part2')
+def weight_training_list_beginner_level_2parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='beginner', Header_third__contains='part2')
     posts = posts.order_by("title")
     posts = posts.order_by("Header_four")
-    return render(request, 'fitweb/weight_training_list_low_level_2parts.html', {'posts': posts})
+    return render(request, 'fitweb/weight_training_list_beginner_level_2parts.html', {'posts': posts})
 
-def weight_training_list_low_level_3parts(request):
-    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='low', Header_third__contains='part3')
+def weight_training_list_beginner_level_3parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='beginner', Header_third__contains='part3')
     posts = posts.order_by("title")
     posts = posts.order_by("Header_four")
-    return render(request, 'fitweb/weight_training_list_low_level_3parts.html', {'posts': posts})
+    return render(request, 'fitweb/weight_training_list_beginner_level_3parts.html', {'posts': posts})
 
-def weight_training_list_low_level_4parts(request):
-    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='low', Header_third__contains='part4')
+
+
+
+def weight_training_list_intermediate_level_2parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='intermediate', Header_third__contains='part2')
     posts = posts.order_by("title")
     posts = posts.order_by("Header_four")
-    return render(request, 'fitweb/weight_training_list_low_level_4parts.html', {'posts': posts})
+    return render(request, 'fitweb/weight_training_list_intermediate_level_2parts.html', {'posts': posts})
 
-def weight_training_list_low_level_5parts(request):
-    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='low', Header_third__contains='part5')
+def weight_training_list_intermediate_level_3parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='intermediate', Header_third__contains='part3')
     posts = posts.order_by("title")
     posts = posts.order_by("Header_four")
-    return render(request, 'fitweb/weight_training_list_low_level_5parts.html', {'posts': posts})
+    return render(request, 'fitweb/weight_training_list_intermediate_level_3parts.html', {'posts': posts})
 
-
-
-
-def weight_training_list_middle_level_2parts(request):
-    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='middle', Header_third__contains='part2')
+def weight_training_list_intermediate_level_4parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='intermediate', Header_third__contains='part4')
     posts = posts.order_by("title")
     posts = posts.order_by("Header_four")
-    return render(request, 'fitweb/weight_training_list_middle_level_2parts.html', {'posts': posts})
+    return render(request, 'fitweb/weight_training_list_intermediate_level_4parts.html', {'posts': posts})
 
-def weight_training_list_middle_level_3parts(request):
-    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='middle', Header_third__contains='part3')
+def weight_training_list_intermediate_level_5parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='intermediate', Header_third__contains='part5')
     posts = posts.order_by("title")
     posts = posts.order_by("Header_four")
-    return render(request, 'fitweb/weight_training_list_middle_level_3parts.html', {'posts': posts})
+    return render(request, 'fitweb/weight_training_list_intermediate_level_5parts.html', {'posts': posts})
 
-def weight_training_list_middle_level_4parts(request):
-    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='middle', Header_third__contains='part4')
+
+
+
+def weight_training_list_advanced_level_3parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='advanced', Header_third__contains='part3')
     posts = posts.order_by("title")
     posts = posts.order_by("Header_four")
-    return render(request, 'fitweb/weight_training_list_middle_level_4parts.html', {'posts': posts})
+    return render(request, 'fitweb/weight_training_list_advanced_level_3parts.html', {'posts': posts})
 
-def weight_training_list_middle_level_5parts(request):
-    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='middle', Header_third__contains='part5')
+def weight_training_list_advanced_level_4parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='advanced', Header_third__contains='part4')
     posts = posts.order_by("title")
     posts = posts.order_by("Header_four")
-    return render(request, 'fitweb/weight_training_list_middle_level_5parts.html', {'posts': posts})
+    return render(request, 'fitweb/weight_training_list_advanced_level_4parts.html', {'posts': posts})
 
-
-
-
-def weight_training_list_high_level_2parts(request):
-    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='high', Header_third__contains='part2')
+def weight_training_list_advanced_level_5parts(request):
+    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='advanced', Header_third__contains='part5')
     posts = posts.order_by("title")
     posts = posts.order_by("Header_four")
-    return render(request, 'fitweb/weight_training_list_high_level_2parts.html', {'posts': posts})
+    return render(request, 'fitweb/weight_training_list_advanced_level_5parts.html', {'posts': posts})
 
-def weight_training_list_high_level_3parts(request):
-    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='high', Header_third__contains='part3')
-    posts = posts.order_by("title")
-    posts = posts.order_by("Header_four")
-    return render(request, 'fitweb/weight_training_list_high_level_3parts.html', {'posts': posts})
 
-def weight_training_list_high_level_4parts(request):
-    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='high', Header_third__contains='part4')
-    posts = posts.order_by("title")
-    posts = posts.order_by("Header_four")
-    return render(request, 'fitweb/weight_training_list_high_level_4parts.html', {'posts': posts})
 
-def weight_training_list_high_level_5parts(request):
-    posts = Post.objects.filter(Header_first__contains='weight training', Header_second__contains='high', Header_third__contains='part5')
-    posts = posts.order_by("title")
-    posts = posts.order_by("Header_four")
-    return render(request, 'fitweb/weight_training_list_high_level_5parts.html', {'posts': posts})
 
 
 

@@ -5,7 +5,7 @@ from embed_video.fields import EmbedVideoField
 
 
 class Post(models.Model):
-    objects_num = models.CharField(max_length=200, default='')
+    objects_num = models.IntegerField()
     Header_first = models.CharField(max_length=200, default='')
     Header_second = models.CharField(max_length=200, default='')
     Header_third = models.CharField(max_length=200, default='', blank=True)
