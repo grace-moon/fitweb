@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3eb8b3dc-62bb-4fa1-a207-b3f6881adddd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/about_us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/email.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/how_to_use.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/hiit_list_high_level.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/hiit_list_high_level.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/hiit_list_low_level.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/hiit_list_low_level.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +85,7 @@
       <workItem from="1638775982519" duration="2259000" />
       <workItem from="1638778325540" duration="4872000" />
       <workItem from="1638868113786" duration="6988000" />
-      <workItem from="1638882362692" duration="565000" />
+      <workItem from="1638882362692" duration="3653000" />
     </task>
     <servers />
   </component>
