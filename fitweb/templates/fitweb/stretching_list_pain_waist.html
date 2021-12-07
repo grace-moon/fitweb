@@ -47,7 +47,7 @@
   <div class="container-fluid" >
     <h1 style="width: 100%">
         <header class="page-header" style="overflow: auto;">
-            <h1>Waist</h1>
+            <h1><b>Waist</b></h1>
         </header>
         <button style="float: right" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -56,30 +56,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href={% url 'hiit_list' %}>HIIT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+            <a class="nav-link active" aria-current="page" href={% url 'stretching_list' %}><b>STRETCHING</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link active" aria-current="page" href={% url 'weight_training_list' %}>WEIGHT TRAINING</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href={% url 'hiit_list_high_level' %}>CUSTOMIZED EXERCISE</a>
+        </li>
+
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
@@ -88,10 +77,16 @@
 
 <div class="content container" style="text-align: center">
     {% for post in posts %}
-        <div class="post">
-            <h1><a href="{% url 'detail' pk=post.pk %}">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        <h2 id="barofont" class="listdown" >
+            <ul id="mainlist"  class="list-group list-group-flush">
+                <li class="list-group-item" style="background-color: black">
+                    <div class="post">
+                        <h3><a href="{% url 'detail' pk=post.pk %}", style="color: #ff6261">{{ post.title }}</a></h3>
+                        <p style="color: white">{{ post.text|linebreaksbr }}</p>
+                    </div>
+                </li>
+            </ul>
+        </h2>
     {% endfor %}
 </div>
 
@@ -107,7 +102,6 @@
 </body>
 
 </html>
-
 
 
 

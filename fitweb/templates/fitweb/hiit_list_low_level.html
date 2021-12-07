@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{% load embed_video_tags %}
+{% load embed_video_tags %}
 {% load static %}
 
 <html>
@@ -25,18 +21,16 @@
             min-height: 500px;
         }
 
+
+
+        #mainlist {
+            border: 1px solid rgba(225,225,225,225);
+        }
+
         .bg-light {
          background-color: rgba(0,0,0,0)!important;
         }
-        .dropdown-toggle::after {
-            display: inline-block;
-            width: 0;
-            height: 0;
-            margin-left: .255em;
-            vertical-align: .255em;
-            content: "";
-            border :0;
-        }
+
         @media (min-width: 576px) {
             .container {
                 max-width: 100%;
@@ -54,7 +48,7 @@
   <div class="container-fluid" >
     <h1 style="width: 100%">
         <header class="page-header" style="overflow: auto;">
-            <h1>Low Level</h1>
+            <h1><b>Low Level</b></h1>
         </header>
         <button style="float: right" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -86,10 +80,16 @@
 
 <div class="content container" style="text-align: center">
     {% for post in posts %}
-        <div class="post">
-            <h1><a href="{% url 'detail' pk=post.pk %}">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        <h2 id="barofont" class="listdown" >
+            <ul id="mainlist"  class="list-group list-group-flush">
+                <li class="list-group-item" style="background-color: black">
+                    <div class="post">
+                        <h3><a href="{% url 'detail' pk=post.pk %}", style="color: #ff6261">{{ post.title }}</a></h3>
+                        <p style="color: white">{{ post.text|linebreaksbr }}</p>
+                    </div>
+                </li>
+            </ul>
+        </h2>
     {% endfor %}
 </div>
 
@@ -110,9 +110,3 @@
 
 
 
-</title>
-</head>
-<body>
-
-</body>
-</html>
