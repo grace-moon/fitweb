@@ -13,8 +13,7 @@ def home(request):
 def about_us(request):
     return render(request, 'fitweb/about_us.html')
 
-def how_to_use(request):
-    return render(request, 'fitweb/how_to_use.html')
+
 
 def email(request):
     return render(request, 'fitweb/email.html')
