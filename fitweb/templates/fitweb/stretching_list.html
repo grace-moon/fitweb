@@ -43,39 +43,142 @@
             border-right: 0;
             border-left: 0;
         }
+/* 초기화(중요하지 않음) */
+ul, li {margin:0; padding:0; list-style: none;}
+a {text-decoration: none; color: white; display:block;}
+.float-wrap:after {content: ''; display: block; clear: both;}
 
+/* 가운데 정렬(중요하지 않음) */
+.nav {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav .menu-1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 33.3333%;
+}
+
+/* 2단 메뉴 */
+.nav .menu-1 .link-1 {
+  /* 꾸미기(중요하지 않음) */
+  background-color: rgba(255, 255, 255, 0);
+  color: #ffe78c;
+  padding: 3px 15px;
+  border-bottom: 1px solid #dbdbdb;
+  margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+
+
+}
+.nav .menu-1 last-chile {
+  /* 꾸미기(중요하지 않음) */
+  border-right: none;
+}
+.nav .menu-1 .list-1 {
+  display: none;
+  /* 꾸미기(중요하지 않음) */
+  padding-right: 1px;
+}
+.nav .menu-1 .link-1:hover {
+  /* 꾸미기(중요하지 않음) */
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffee75;;
+}
+.nav .menu-1 .link-1:hover+.list-1,
+.nav .menu-1 .list-1:hover{
+  display: block;
+}
+.nav .menu-1 .list-1 .link-2 {
+  /* 꾸미기(중요하지 않음) */
+  background-color: rgba(0, 0, 0, 0);
+  padding: 3px 15px;
+
+}
+
+/* 3단 메뉴 */
+.nav .menu-2 {
+  position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+.nav .menu-2 .list-2 {
+  display: none;
+}
+.nav .menu-2 .link-2:hover {
+  /* 꾸미기(중요하지 않음) */
+  background-color: #000000;
+  color: #ff6363;
+}
+.nav .menu-2 .link-2:hover+.list-2,
+.nav .menu-2 .list-2:hover{
+  display: block;
+}
+.nav .menu-2 .list-2{
+  position: absolute;
+  top:0;
+  left:100%;
+  width:120px;
+}
+.nav .menu-2 .list-2 .link-3 {
+  /* 꾸미기(중요하지 않음) */
+  padding: 3px 15px;
+  background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+.nav .menu-2 .list-2 .link-3:hover {
+  /* 꾸미기(중요하지 않음) */
+  background-color: #000000;
+  color: #ff9368;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,1);
+    border-color: rgba(0,0,0,0);
+    margin-bottom: 10px;
+}
     </style>
 <body>
 
     <h1 class="logo" style="margin-top: 50px"><a id="logo" href="{% url 'home' %}"><img src="static/images/logo.png"></a></h1>
     <header class="page-header" style="overflow: auto;">
-        <a style="color: #ff6969; text-align: center" href={% url 'stretching_list' %}><h2><b>STRETCHING</b></h2></a>
+        <a style="color: #ff7878; text-align: center" href={% url 'stretching_list' %}><h2><b>STRETCHING</b></h2></a>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 20px;">
-      <div class="container-fluid" style="background-color: black;" >
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav" style="margin-right: auto; margin-left: auto;ß">
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" style="color: #ffffff; margin-right: 10px; " href={% url 'home' %}>CUSTOMIZED_EXERCISE</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" style="color: #ffffff; margin-right: 10px; " href={% url 'weight_training_list' %}>WEIGHT_TRAINING</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" style="color: #ffffff; margin-right: 10px; " href={% url 'hiit_list' %}>HIIT</a>
-                </li>
-                  </ul>
-            </div>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+        <button style="margin-right: auto; margin-left: auto" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span style="border: none; color: darkorange">+</span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <a style="color:#76baff"  href={% url 'weight_training_list' %} >
+            CUSTOMIZED EXERCISE
+          </a>
+        </li>
+      </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown" >
+          <a style="color: darkorange;"  href={% url 'weight_training_list' %} >
+            WEIGHT TRAINING
+          </a>
+        </li>
+      </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown" >
+          <a style="color: #c1ff28;"  href={% url 'hiit_list' %} >
+              HIIT
+          </a>
+        </li>
+      </ul>
+</nav>
 
-
-
-    <h2 id="barofont" class="listdown" >
+    <div id="barofont" class="listdown" >
         <ul id="mainlist"  class="list-group list-group-flush">
             <li class="list-group-item">
                 <div class="dropdown dropend">
@@ -160,9 +263,6 @@
             </li>
         </ul>
 
-    </h2>
-
-</div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

@@ -77,7 +77,7 @@
 
 /* 초기화(중요하지 않음) */
 ul, li {margin:0; padding:0; list-style: none;}
-a {text-decoration: none; color: #333; display:block;}
+a {text-decoration: none; color: black; display:block;}
 .float-wrap:after {content: ''; display: block; clear: both;}
 
 /* 가운데 정렬(중요하지 않음) */
@@ -87,36 +87,37 @@ a {text-decoration: none; color: #333; display:block;}
 }
 
 .nav .menu-1 {
-  float: left;
-  width: 33.3333%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 33.3333%;
 }
 
 /* 2단 메뉴 */
 .nav .menu-1 .link-1 {
   /* 꾸미기(중요하지 않음) */
-  background-color: white;
-  color: black;
+  background-color: rgba(255, 255, 255, 0);
+  color: #000000;
   padding: 3px 15px;
   border-bottom: 1px solid #dbdbdb;
-  margin-right: 20px;
-    margin-top: 20px;
+  margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
 
 
 }
-.nav .menu-1 .link-1:last-chile {
+.nav .menu-1 .link-1:last-child {
   /* 꾸미기(중요하지 않음) */
   border-right: none;
 }
 .nav .menu-1 .list-1 {
   display: none;
-
   /* 꾸미기(중요하지 않음) */
   padding-right: 1px;
 }
 .nav .menu-1 .link-1:hover {
   /* 꾸미기(중요하지 않음) */
-  background-color: rgb(0, 0, 0);
-  color: #ffee75;;
+    background-color: rgba(255, 255, 255, 0);
+    color: darkorange;
 }
 .nav .menu-1 .link-1:hover+.list-1,
 .nav .menu-1 .list-1:hover{
@@ -124,22 +125,26 @@ a {text-decoration: none; color: #333; display:block;}
 }
 .nav .menu-1 .list-1 .link-2 {
   /* 꾸미기(중요하지 않음) */
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   padding: 3px 15px;
-  border-bottom: 1px solid #fff;
+
 }
 
 /* 3단 메뉴 */
 .nav .menu-2 {
   position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
 }
 .nav .menu-2 .list-2 {
   display: none;
 }
 .nav .menu-2 .link-2:hover {
   /* 꾸미기(중요하지 않음) */
-  background-color: #000000;
-  color: #ff6363;
+  background-color: rgba(255, 255, 255, 0);
+  color: #fd6f5c;
 }
 .nav .menu-2 .link-2:hover+.list-2,
 .nav .menu-2 .list-2:hover{
@@ -154,8 +159,7 @@ a {text-decoration: none; color: #333; display:block;}
 .nav .menu-2 .list-2 .link-3 {
   /* 꾸미기(중요하지 않음) */
   padding: 3px 15px;
-  border-bottom: 1px solid #fff;
-  background-color: #000000;
+  background-color: rgb(0, 0, 0);
     color: #ffffff;
 }
 .nav .menu-2 .list-2 .link-3:hover {
@@ -163,21 +167,13 @@ a {text-decoration: none; color: #333; display:block;}
   background-color: #000000;
   color: #ff9368;
 }
+
 .navbar-light .navbar-toggler {
     color: rgba(0,0,0,1);
     border-color: rgba(0,0,0,0);
     margin-bottom: 10px;
 }
-.breadcrumb-item.active {
-    color: #000000;
-}
-.breadcrumb-item.active {
-    color: #000000;
-    text-align: center;
-}
-.breadcrumb-item.active {
-    color: #868e96;
-}
+
     </style>
 <body>
 
@@ -189,13 +185,13 @@ a {text-decoration: none; color: #333; display:block;}
         <button style="margin-right: auto; margin-left: auto" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" style="border: none"></span>
         </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-bottom: 300px;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item dropdown" >
-          <h3 class="nav-link dropdown-toggle" id="navbarDropdown" style="color: black" role="button" data-bs-toggle="dropdown" aria-expanded="false" disabled="">
+          <h3 class="nav-link dropdown-toggle" id="navbarDropdown" style="color: black; " role="button" data-bs-toggle="dropdown" aria-expanded="false" disabled="">
             STRETCHING
           </h3>
-            <ul class="nav float-wrap" style="margin-bottom: 150px">
+            <ul class="nav float-wrap" style="margin-bottom: 70px">
               <li class="menu-1">
                   <a class="link-1" href="#"><h5>Pain Relief</h5></a>
                 <ul class="list-1">
@@ -266,107 +262,78 @@ a {text-decoration: none; color: #333; display:block;}
                 </ul>
               </li>
             </ul>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-bottom: 300px;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item dropdown" >
-          <h3 class="nav-link dropdown-toggle" id="navbarDropdown" style="color: black" role="button" data-bs-toggle="dropdown" aria-expanded="false" disabled="">
-              WEIGHT TRAINING
-          </h3>
-            <ul class="nav float-wrap" style="margin-bottom: 150px">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" style="color:black" role="button" data-bs-toggle="dropdown" aria-expanded="false" disabled=""  href={% url 'weight_training_list' %} >
+            <h3>WEIGHT TRAINING</h3>
+          </a>
+            <ul class="nav float-wrap" style="margin-bottom: 70px">
               <li class="menu-1">
-                  <a class="link-1" href="#"><h5>Pain Relief</h5></a>
+                  <a class="link-1" href="#"><h5>Beginner Level</h5></a>
                 <ul class="list-1">
                   <li class="menu-2 float-wrap">
-                      <a class="link-2" href="#">Full Body</a>
-                      <a class="link-2" href="#">Neck</a>
-                      <a class="link-2" href="#">Shoulder</a>
-                      <a class="link-2" href="#">Waist</a>
-                      <a class="link-2" href="#">Pelvis</a>
-                      <a class="link-2" href="#">Knee</a>
-                      <a class="link-2" href="#">Wrist</a>
-                      <a class="link-2" href="#">Ankle</a>
+                        <a class="link-2" href="#">2Parts Exercise</a>
+                        <a class="link-2" href="#">3Parts Exercise</a>
                   </li>
                 </ul>
               </li>
 
               <li class="menu-1">
-                  <a class="link-1" href="#"><h5>Spare Time</h5></a>
+                  <a class="link-1" href="#"><h5>Intermediate Level</h5></a>
                 <ul class="list-1">
                   <li class="menu-2 float-wrap">
-                      <a class="link-2" href="#">Full Body</a>
-                      <a class="link-2" href="#">Top</a>
-                      <a class="link-2" href="#">Bottom</a>
+                        <a class="link-2" href="#">2Parts Exercise</a>
+                        <a class="link-2" href="#">3Parts Exercise</a>
+                        <a class="link-2" href="#">4Parts Exercise</a>
+                        <a class="link-2" href="#">5Parts Exercise</a>
                   </li>
                 </ul>
               </li>
 
               <li class="menu-1">
-                  <a class="link-1" href="#"><h5>After Wake Up</h5></a>
+                  <a class="link-1" href="#"><h5>Advanced Level</h5></a>
                 <ul class="list-1">
                   <li class="menu-2 float-wrap">
-                      <a class="link-2" href="#">Short Time</a>
-                      <a class="link-2" href="#">Medium Time</a>
-                      <a class="link-2" href="#">Long Time</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-1">
-                  <a class="link-1" href="#"><h5>Before Bed</h5></a>
-                <ul class="list-1">
-                  <li class="menu-2 float-wrap">
-                      <a class="link-2" href="#">Short Time</a>
-                      <a class="link-2" href="#">Medium Time</a>
-                      <a class="link-2" href="#">Long Time</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="menu-1">
-                  <a class="link-1" href="#"><h5>Before Exercise</h5></a>
-                <ul class="list-1">
-                  <li class="menu-2 float-wrap">
-                      <a class="link-2" href="#">Short Time</a>
-                      <a class="link-2" href="#">Medium Time</a>
-                      <a class="link-2" href="#">Long Time</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="menu-1">
-                  <a class="link-1" href="#"><h5>After Exercise</h5></a>
-                <ul class="list-1">
-                  <li class="menu-2 float-wrap">
-                      <a class="link-2" href="#">Short Time</a>
-                      <a class="link-2" href="#">Medium Time</a>
-                      <a class="link-2" href="#">Long Time</a>
+                        <a class="link-2" href="#">3Parts Exercise</a>
+                        <a class="link-2" href="#">4Parts Exercise</a>
+                        <a class="link-2" href="#">5Parts Exercise</a>
                   </li>
                 </ul>
               </li>
             </ul>
-
-        <li class="nav-item dropdown">
-          <h4 class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </h4>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-          </ul>
         </li>
-      `<li class="nav-item">
-          <a class="nav-link disabled"><br></a>
-        </li>
+      </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" style="color:black" role="button" data-bs-toggle="dropdown" aria-expanded="false" disabled=""  href={% url 'weight_training_list' %} >
+            <h3>HIIT</h3>
+          </a>
+            <ul class="nav float-wrap" style="margin-bottom: 70px">
+              <li class="menu-1">
+                  <a class="link-1" href="#"><h5>Low Level</h5></a>
+              </li>
 
+              <li class="menu-1">
+                  <a class="link-1" href="#"><h5>High Level</h5></a>
+              </li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+    </div>
+        </li>
       </ul>
     </div>
   </div>
-</nav>
+ </nav>
 <nav aria-label="breadcrumb" >
   <ol class="breadcrumb" style="background-color: rgba(0,0,0,0)">      <li class="breadcrumb-item active" aria-current="page" >{{ post.Header_first }}</li>
       <li class="breadcrumb-item active" aria-current="page">{{ post.Header_second }}</li>
       <li class="breadcrumb-item active" aria-current="page">{{ post.Header_third }}</li>
       <li class="breadcrumb-item active" aria-current="page">{{ post.Header_four }}</li>
-      <li class="breadcrumb-item active" aria-current="page">{{ post.title }}</li
+      <li class="breadcrumb-item active" aria-current="page">{{ post.title }}</li>
   </ol>
 </nav>
 

@@ -2,7 +2,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Post
 
-
 def main(request):
     return render(request, 'fitweb/main.html')
 
@@ -250,4 +249,11 @@ def hiit_list_high_level(request):
     posts = Post.objects.filter(Header_first__contains='hiit', Header_second__contains='high')
     posts = posts.order_by("title")
     return render(request, 'fitweb/hiit_list_high_level.html', {'posts': posts})
+
+
+
+def recommend(request):
+    posts = Post.objects.all()
+    posts = posts.order_by("title")
+    return render(request, "fitweb/recommend.html", {'posts':posts})
 

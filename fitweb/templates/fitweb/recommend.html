@@ -37,20 +37,14 @@
 <body>
     <h1 class="logo" style="margin-top: 50px"><a id="logo" href="{% url 'home' %}"><img src="static/images/logo.png"></a></h1>
     <header class="page-header" style="overflow: auto;">
-        <a style="color: #C1FF28FF; text-align: center" href={% url 'hiit_list' %}><h2><b>HIIT</b></h2></a>
+        <a style="color: #C1FF28FF; text-align: center" href={% url 'hiit_list' %}><h2><b>CUSTOMIZED EXERCISE</b></h2></a>
     </header>
 <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
         <button style="margin-right: auto; margin-left: auto" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span style="border: none; color: #c1ff28">+</span>
         </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <a style="color:#76baff"  href={% url 'weight_training_list' %} >
-            CUSTOMIZED EXERCISE
-          </a>
-        </li>
-      </ul>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item dropdown" >
@@ -62,8 +56,17 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item dropdown" >
-          <a style="color: darkorange;" href={% url 'weight_training_list' %} >
+          <a style="color: #8a8bff;" href={% url 'weight_training_list' %} >
             WEIGHT TRAINING
+          </a>
+        </li>
+      </ul>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown" >
+          <a style="color: #ff4747;" href={% url 'hiit_list' %} >
+              HIIT
           </a>
         </li>
       </ul>
@@ -74,18 +77,21 @@
 </nav>
 
 
-    <h2 id="barofont" class="listdown" >
-        <ul id="mainlist"  class="list-group list-group-flush">
-            <li class="list-group-item">
-                  <a style="font-size: 20px;" href={% url 'hiit_list_low_level' %}>Low Level</a>
-            </li>
-            <li class="list-group-item">
-                  <a style="font-size: 20px;" href={% url 'hiit_list_high_level' %}>High Level</a>
-            </li>
-        </ul>
-    </h2>
-</div>
 
+    <div class="content container" style="text-align: center">
+        {% for post in posts %}
+            <h2 id="barofont" class="listdown" >
+                <ul id="mainlist"  class="list-group list-group-flush">
+                    <li class="list-group-item" style="background-color: black">
+                        <div class="post">
+                            <h3><a href="{% url 'detail' pk=post.pk %}", style="color: #ff6261">{{ post.title }}</a></h3>
+                            <p style="color: white">{{ post.text|linebreaksbr }}</p>
+                        </div>
+                    </li>
+                </ul>
+            </h2>
+        {% endfor %}
+  </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
