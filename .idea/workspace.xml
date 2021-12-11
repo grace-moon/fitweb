@@ -4,15 +4,8 @@
     <list default="true" id="3eb8b3dc-62bb-4fa1-a207-b3f6881adddd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/hiit_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/hiit_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_fullbody.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_fullbody.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb4/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb4/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb4/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb4/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
@@ -107,7 +101,7 @@
       <workItem from="1638778325540" duration="4872000" />
       <workItem from="1638868113786" duration="6988000" />
       <workItem from="1638882362692" duration="6157000" />
-      <workItem from="1638926619348" duration="45367000" />
+      <workItem from="1638926619348" duration="47387000" />
     </task>
     <servers />
   </component>
