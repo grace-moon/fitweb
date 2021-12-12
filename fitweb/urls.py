@@ -74,5 +74,4 @@ urlpatterns = [
     path('hiit_list_high_level', views.hiit_list_high_level, name='hiit_list_high_level'),
 
     path('recommend', views.recommend, name='recommend'),
-
 ]

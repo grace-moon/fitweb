@@ -11,7 +11,7 @@
 
     </head>
 
-    <style>
+     <style>
 
 
         body {
@@ -38,6 +38,101 @@
                 max-width: 100%;
             }
         }
+/* 초기화(중요하지 않음) */
+ul, li {margin:0; padding:0; list-style: none;}
+a {text-decoration: none; color: #333; display:block;}
+.float-wrap:after {content: ''; display: block; clear: both;}
+
+/* 가운데 정렬(중요하지 않음) */
+.nav {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav .menu-1 {
+  float: left;
+  width: 33.3333%;
+}
+
+/* 2단 메뉴 */
+.nav .menu-1 .link-1 {
+  /* 꾸미기(중요하지 않음) */
+  background-color: white;
+  color: black;
+  padding: 3px 15px;
+  border-bottom: 1px solid #dbdbdb;
+  margin-right: 20px;
+    margin-top: 20px;
+
+
+}
+.nav .menu-1 .link-1:last-child {
+  /* 꾸미기(중요하지 않음) */
+  border-right: none;
+}
+.nav .menu-1 .list-1 {
+  display: none;
+
+  /* 꾸미기(중요하지 않음) */
+  padding-right: 1px;
+}
+.nav .menu-1 .link-1:hover {
+  /* 꾸미기(중요하지 않음) */
+  background-color: rgb(0, 0, 0);
+  color: #ffee75;;
+}
+.nav .menu-1 .link-1:hover+.list-1,
+.nav .menu-1 .list-1:hover{
+  display: block;
+}
+.nav .menu-1 .list-1 .link-2 {
+  /* 꾸미기(중요하지 않음) */
+  background-color: white;
+  padding: 3px 15px;
+  border-bottom: 1px solid #fff;
+}
+
+/* 3단 메뉴 */
+.nav .menu-2 {
+  position: relative;
+}
+.nav .menu-2 .list-2 {
+  display: none;
+}
+.nav .menu-2 .link-2:hover {
+  /* 꾸미기(중요하지 않음) */
+  background-color: #000000;
+  color: #ff6363;
+}
+.nav .menu-2 .link-2:hover+.list-2,
+.nav .menu-2 .list-2:hover{
+  display: block;
+}
+.nav .menu-2 .list-2{
+  position: absolute;
+  top:0;
+  left:100%;
+  width:120px;
+}
+.nav .menu-2 .list-2 .link-3 {
+  /* 꾸미기(중요하지 않음) */
+  padding: 3px 15px;
+  border-bottom: 1px solid #fff;
+  background-color: #000000;
+    color: #ffffff;
+}
+.nav .menu-2 .list-2 .link-3:hover {
+  /* 꾸미기(중요하지 않음) */
+  background-color: #000000;
+  color: #ff9368;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,1);
+    border-color: rgba(0,0,0,0);
+    margin-bottom: 10px;
+}
+
     </style>
 <body>
 

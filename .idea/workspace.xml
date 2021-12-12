@@ -3,9 +3,45 @@
   <component name="ChangeListManager">
     <list default="true" id="3eb8b3dc-62bb-4fa1-a207-b3f6881adddd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb4/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb4/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitweb4/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb4/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/hiit_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/hiit_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/recommend.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/recommend.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_after_exercise_long.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_after_exercise_long.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_after_exercise_medium.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_after_exercise_medium.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_after_exercise_short.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_after_exercise_short.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_after_wake_up_long.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_after_wake_up_long.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_after_wake_up_medium.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_after_wake_up_medium.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_after_wake_up_short.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_after_wake_up_short.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_before_bed_long.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_before_bed_long.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_before_bed_medium.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_before_bed_medium.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_before_bed_short.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_before_bed_short.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_before_exercise_long.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_before_exercise_long.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_before_exercise_medium.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_before_exercise_medium.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_before_exercise_short.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_before_exercise_short.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_ankle.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_ankle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_fullbody.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_fullbody.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_knee.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_knee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_neck.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_neck.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_pelvis.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_pelvis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_shoulder.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_shoulder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_waist.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_waist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_wrist.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_pain_wrist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_spare_time_bottom.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_spare_time_bottom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_spare_time_fullbody.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_spare_time_fullbody.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_spare_time_top.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/stretching_list_spare_time_top.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_advanced_level_3parts.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_advanced_level_3parts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_advanced_level_4parts.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_advanced_level_4parts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_advanced_level_5parts.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_advanced_level_5parts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_beginner_level_2parts.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_beginner_level_2parts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_beginner_level_3parts.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_beginner_level_3parts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_intermediate_level_2parts.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_intermediate_level_2parts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_intermediate_level_3parts.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_intermediate_level_3parts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_intermediate_level_4parts.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_intermediate_level_4parts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_intermediate_level_5parts.html" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/templates/fitweb/weight_training_list_intermediate_level_5parts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitweb/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +137,8 @@
       <workItem from="1638778325540" duration="4872000" />
       <workItem from="1638868113786" duration="6988000" />
       <workItem from="1638882362692" duration="6157000" />
-      <workItem from="1638926619348" duration="47387000" />
+      <workItem from="1638926619348" duration="47717000" />
+      <workItem from="1639211713708" duration="24087000" />
     </task>
     <servers />
   </component>

@@ -193,28 +193,28 @@ a {text-decoration: none; color: black; display:block;}
           </h3>
             <ul class="nav float-wrap" style="margin-bottom: 70px">
               <li class="menu-1">
-                  <a class="link-1" href="#"><h5>Pain Relief</h5></a>
+                  <a class="link-1"><h5>Pain Relief</h5></a>
                 <ul class="list-1">
                   <li class="menu-2 float-wrap">
-                      <a class="link-2" href="#">Full Body</a>
-                      <a class="link-2" href="#">Neck</a>
-                      <a class="link-2" href="#">Shoulder</a>
-                      <a class="link-2" href="#">Waist</a>
-                      <a class="link-2" href="#">Pelvis</a>
-                      <a class="link-2" href="#">Knee</a>
-                      <a class="link-2" href="#">Wrist</a>
-                      <a class="link-2" href="#">Ankle</a>
+                      <a class="link-2" href={% url 'stretching_list_pain_fullbody' %}>Full Body</a>
+                      <a class="link-2" href={% url 'stretching_list_pain_neck' %}>Neck</a>
+                      <a class="link-2" href={% url 'stretching_list_pain_shoulder' %}>Shoulder</a>
+                      <a class="link-2" href={% url 'stretching_list_pain_waist' %}>Waist</a>
+                      <a class="link-2" href={% url 'stretching_list_pain_pelvis' %}>Pelvis</a>
+                      <a class="link-2" href={% url 'stretching_list_pain_knee' %}>Knee</a>
+                      <a class="link-2" href={% url 'stretching_list_pain_wrist' %}>Wrist</a>
+                      <a class="link-2" href={% url 'stretching_list_pain_ankle' %}>Ankle</a>
                   </li>
                 </ul>
               </li>
 
               <li class="menu-1">
-                  <a class="link-1" href="#"><h5>Spare Time</h5></a>
+                  <a class="link-1"><h5>Spare Time</h5></a>
                 <ul class="list-1">
                   <li class="menu-2 float-wrap">
-                      <a class="link-2" href="#">Full Body</a>
-                      <a class="link-2" href="#">Top</a>
-                      <a class="link-2" href="#">Bottom</a>
+                      <a class="link-2" href={% url "stretching_list_spare_time_fullbody" %}>Full Body</a>
+                      <a class="link-2" href={% url "stretching_list_spare_time_top" %}>Top</a>
+                      <a class="link-2" href={% url "stretching_list_spare_time_bottom" %}>Bottom</a>
                   </li>
                 </ul>
               </li>
@@ -223,9 +223,9 @@ a {text-decoration: none; color: black; display:block;}
                   <a class="link-1" href="#"><h5>After Wake Up</h5></a>
                 <ul class="list-1">
                   <li class="menu-2 float-wrap">
-                      <a class="link-2" href="#">Short Time</a>
-                      <a class="link-2" href="#">Medium Time</a>
-                      <a class="link-2" href="#">Long Time</a>
+                      <a class="link-2" href={% url "stretching_list_after_wake_up_short" %}>Short Time</a>
+                      <a class="link-2" href={% url "stretching_list_after_wake_up_medium" %}>Medium Time</a>
+                      <a class="link-2" href={% url "stretching_list_after_wake_up_long" %}>Long Time</a>
                   </li>
                 </ul>
               </li>
@@ -233,9 +233,9 @@ a {text-decoration: none; color: black; display:block;}
                   <a class="link-1" href="#"><h5>Before Bed</h5></a>
                 <ul class="list-1">
                   <li class="menu-2 float-wrap">
-                      <a class="link-2" href="#">Short Time</a>
-                      <a class="link-2" href="#">Medium Time</a>
-                      <a class="link-2" href="#">Long Time</a>
+                      <a class="link-2" href={% url "stretching_list_before_bed_short" %}>Short Time</a>
+                      <a class="link-2" href={% url "stretching_list_before_bed_medium" %}>Medium Time</a>
+                      <a class="link-2" href={% url "stretching_list_before_bed_long" %}>Long Time</a>
                   </li>
                 </ul>
               </li>
@@ -244,9 +244,9 @@ a {text-decoration: none; color: black; display:block;}
                   <a class="link-1" href="#"><h5>Before Exercise</h5></a>
                 <ul class="list-1">
                   <li class="menu-2 float-wrap">
-                      <a class="link-2" href="#">Short Time</a>
-                      <a class="link-2" href="#">Medium Time</a>
-                      <a class="link-2" href="#">Long Time</a>
+                      <a class="link-2" href={% url "stretching_list_before_exercise_short" %}>Short Time</a>
+                      <a class="link-2" href={% url "stretching_list_before_exercise_medium" %}>Medium Time</a>
+                      <a class="link-2" href={% url "stretching_list_before_exercise_long" %}>Long Time</a>
                   </li>
                 </ul>
               </li>
@@ -255,9 +255,9 @@ a {text-decoration: none; color: black; display:block;}
                   <a class="link-1" href="#"><h5>After Exercise</h5></a>
                 <ul class="list-1">
                   <li class="menu-2 float-wrap">
-                      <a class="link-2" href="#">Short Time</a>
-                      <a class="link-2" href="#">Medium Time</a>
-                      <a class="link-2" href="#">Long Time</a>
+                      <a class="link-2" href={% url "stretching_list_after_exercise_short" %}>Short Time</a>
+                      <a class="link-2" href={% url "stretching_list_after_exercise_medium" %}>Medium Time</a>
+                      <a class="link-2" href={% url "stretching_list_after_exercise_long" %}>Long Time</a>
                   </li>
                 </ul>
               </li>
@@ -273,8 +273,8 @@ a {text-decoration: none; color: black; display:block;}
                   <a class="link-1" href="#"><h5>Beginner Level</h5></a>
                 <ul class="list-1">
                   <li class="menu-2 float-wrap">
-                        <a class="link-2" href="#">2Parts Exercise</a>
-                        <a class="link-2" href="#">3Parts Exercise</a>
+                        <a class="link-2" href={% url "weight_training_list_beginner_level_2parts" %}>2Parts Exercise</a>
+                        <a class="link-2" href={% url "weight_training_list_beginner_level_3parts" %}>3Parts Exercise</a>
                   </li>
                 </ul>
               </li>
@@ -283,10 +283,10 @@ a {text-decoration: none; color: black; display:block;}
                   <a class="link-1" href="#"><h5>Intermediate Level</h5></a>
                 <ul class="list-1">
                   <li class="menu-2 float-wrap">
-                        <a class="link-2" href="#">2Parts Exercise</a>
-                        <a class="link-2" href="#">3Parts Exercise</a>
-                        <a class="link-2" href="#">4Parts Exercise</a>
-                        <a class="link-2" href="#">5Parts Exercise</a>
+                        <a class="link-2" href={% url "weight_training_list_intermediate_level_2parts" %}>2Parts Exercise</a>
+                        <a class="link-2" href={% url "weight_training_list_intermediate_level_3parts" %}>3Parts Exercise</a>
+                        <a class="link-2" href={% url "weight_training_list_intermediate_level_4parts" %}>4Parts Exercise</a>
+                        <a class="link-2" href={% url "weight_training_list_intermediate_level_5parts" %}>5Parts Exercise</a>
                   </li>
                 </ul>
               </li>
@@ -295,9 +295,9 @@ a {text-decoration: none; color: black; display:block;}
                   <a class="link-1" href="#"><h5>Advanced Level</h5></a>
                 <ul class="list-1">
                   <li class="menu-2 float-wrap">
-                        <a class="link-2" href="#">3Parts Exercise</a>
-                        <a class="link-2" href="#">4Parts Exercise</a>
-                        <a class="link-2" href="#">5Parts Exercise</a>
+                        <a class="link-2" href={% url "weight_training_list_advanced_level_3parts" %}>3Parts Exercise</a>
+                        <a class="link-2" href={% url "weight_training_list_advanced_level_4parts" %}>4Parts Exercise</a>
+                        <a class="link-2" href={% url "weight_training_list_advanced_level_5parts" %}>5Parts Exercise</a>
                   </li>
                 </ul>
               </li>
@@ -312,11 +312,11 @@ a {text-decoration: none; color: black; display:block;}
           </a>
             <ul class="nav float-wrap" style="margin-bottom: 70px">
               <li class="menu-1">
-                  <a class="link-1" href="#"><h5>Low Level</h5></a>
+                  <a class="link-1" href={% url "hiit_list_low_level" %}><h5>Low Level</h5></a>
               </li>
 
               <li class="menu-1">
-                  <a class="link-1" href="#"><h5>High Level</h5></a>
+                  <a class="link-1" href={% url "hiit_list_high_level" %}><h5>High Level</h5></a>
               </li>
             </ul>
         </li>
